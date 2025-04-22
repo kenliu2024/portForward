@@ -1,7 +1,6 @@
 package main
 
 import (
-    "fmt"
     "io"
     "log"
     "net"
@@ -11,7 +10,7 @@ func PortForward() {
     // 本地监听端口
     const listenPort = ":8001"
     // 目标地址（例如：127.0.0.1:8000）
-    const targetAddr = "127.0.0.1:8000"
+    const targetAddr = "yz.testapp.shop:8000"
 
     // 监听本地端口
     listener, err := net.Listen("tcp", listenPort)

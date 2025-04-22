@@ -10,12 +10,17 @@
 
 
 ```
-编译指令：
+go编译指令：
 $env:GOOS="linux"; $env:GOARCH="amd64"; go build -o portforward-linux-amd64 portforward.go
 $env:GOOS="darwin"; $env:GOARCH="amd64"; go build -o portforward-darwin-amd64 portforward.go
 $env:GOOS="windows"; $env:GOARCH="amd64"; go build -o portforward-windows-amd64.exe portforward.go
 $env:GOOS="linux"; $env:GOARCH="arm"; go build -o portforward-linux-arm portforward.go
 $env:GOOS="linux"; $env:GOARCH="386"; go build -o portforward-linux-386 portforward.go
 $env:GOOS="darwin"; $env:GOARCH="arm64"; go build -o portforward-darwin-arm64 portforward.go
+```
+
+```
+nim编译指令：
+nim c -d:release --opt:size port_forward.nim
 ```
 
